@@ -11,21 +11,21 @@ const Main = () => {
     recentPrompt, setRecentPrompt,
     prevPrompts, setPrevPrompts,
     resultData, loading,
-    showResult,
+    showResult, 
     onSent } = useContext(Context)
 
 
   return (
     <div className='main'>
       <div className="nav">
-        <p>Gemini</p>
-        <img src={assets.user_icon} alt="" />
+        <p>Ask Minion</p>
+        <img src={assets.minion} alt="" />
       </div>
 
       <div className="main-container">
       {!showResult ? <> 
         <div className="greet">
-          <p><span>Hello,Dev.</span></p>
+          <p><span>Hello,Banana.</span></p>
           <p>How can i help you today?</p>
         </div>
         <div className="cards">
@@ -48,7 +48,7 @@ const Main = () => {
         </div></>:
         <div className="result">
           <div className="result-title">
-            <img src={assets.user_icon} alt="" />
+            <img src={assets.minion} alt="" />
             <p>{recentPrompt}</p>
           </div>
 
@@ -78,7 +78,7 @@ const Main = () => {
             </div>
           </div>
           <p className="bottom-info">
-            Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps
+            Minion may display inaccurate info, including about people, so double-check its responses. Your privacy and Minion Apps
           </p>
         </div>
       </div>
